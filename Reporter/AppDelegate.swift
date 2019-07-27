@@ -13,6 +13,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var takeImage = false
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -40,7 +41,69 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
+    
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        
+        guard let type = TouchActions(rawValue: shortcutItem.type) else {
+            completionHandler(false)
+            return
+        }
+        
+        let selectedIndex = type.number
+        //(window?.rootViewController as? UITabBarController)?.selectedIndex = selectedIndex
+        
+        if selectedIndex == 0 {
+            
+            let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewController = mainStoryboard.instantiateViewController(withIdentifier: "main") as! UITabBarController
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = initialViewController
+            
+            let vc = mainStoryboard.instantiateViewController(withIdentifier: "Record") as! RecordingSessionViewController
+            
+            self.window?.makeKeyAndVisible()
+            
+            vc.modalTransitionStyle = .coverVertical
+            
+            window?.rootViewController?.present(vc, animated: true, completion: nil)
+            
+        } else if selectedIndex == 1 {
+            
+            let mainStoryboard : UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let initialViewController = mainStoryboard.instantiateViewController(withIdentifier: "main") as! UITabBarController
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+            self.window?.rootViewController = initialViewController
+            
+            self.window?.makeKeyAndVisible()
+            
+            takeImage = true
+            
+            initialViewController.selectedIndex = Constants.tabIndex["Evidence"]!
+            
+        }
+        
+        completionHandler(true)
+    }
 
 
 }
 
+enum TouchActions: String {
+    case capture = "capture"
+    case search = "search"
+    case location = "location"
+    case record = "record"
+    
+    var number: Int {
+        switch  self {
+        case .search:
+            return 3
+        case .location:
+            return 2
+        case .capture:
+            return 1
+        case .record:
+            return 0
+        }
+    }
+}

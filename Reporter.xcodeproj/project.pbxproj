@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		320803F020FCBA5A005152BB /* mapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320803EF20FCBA5A005152BB /* mapViewController.swift */; };
+		320803F220FCCC8B005152BB /* mapMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320803F120FCCC8B005152BB /* mapMarker.swift */; };
+		320803F420FCEC63005152BB /* global.swift in Sources */ = {isa = PBXBuildFile; fileRef = 320803F320FCEC63005152BB /* global.swift */; };
+		322EA22E20FB385A00BEE797 /* photosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322EA22D20FB385A00BEE797 /* photosViewController.swift */; };
+		322EA23020FB6A2700BEE797 /* mainScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 322EA22F20FB6A2700BEE797 /* mainScreenViewController.swift */; };
+		32A6EE9C20FB29C100E81494 /* loadingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32A6EE9B20FB29C100E81494 /* loadingViewController.swift */; };
 		32DCE0F320F5E5BA00F2FEDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DCE0F220F5E5BA00F2FEDD /* AppDelegate.swift */; };
 		32DCE0F520F5E5BA00F2FEDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DCE0F420F5E5BA00F2FEDD /* ViewController.swift */; };
 		32DCE0F820F5E5BA00F2FEDD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DCE0F620F5E5BA00F2FEDD /* Main.storyboard */; };
@@ -14,6 +20,8 @@
 		32DCE0FD20F5E5BB00F2FEDD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 32DCE0FB20F5E5BB00F2FEDD /* LaunchScreen.storyboard */; };
 		32DCE10820F5E5BB00F2FEDD /* ReporterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DCE10720F5E5BB00F2FEDD /* ReporterTests.swift */; };
 		32DCE11320F5E5BB00F2FEDD /* ReporterUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DCE11220F5E5BB00F2FEDD /* ReporterUITests.swift */; };
+		32DCE12120F64A6200F2FEDD /* RecordingSessionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32DCE12020F64A6200F2FEDD /* RecordingSessionViewController.swift */; };
+		32FAEEAB21021B8E00BB03EB /* previewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32FAEEAA21021B8E00BB03EB /* previewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		320803EF20FCBA5A005152BB /* mapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapViewController.swift; sourceTree = "<group>"; };
+		320803F120FCCC8B005152BB /* mapMarker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mapMarker.swift; sourceTree = "<group>"; };
+		320803F320FCEC63005152BB /* global.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = global.swift; sourceTree = "<group>"; };
+		322EA22D20FB385A00BEE797 /* photosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = photosViewController.swift; sourceTree = "<group>"; };
+		322EA22F20FB6A2700BEE797 /* mainScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = mainScreenViewController.swift; sourceTree = "<group>"; };
+		32A6EE9B20FB29C100E81494 /* loadingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = loadingViewController.swift; sourceTree = "<group>"; };
 		32DCE0EF20F5E5BA00F2FEDD /* Reporter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Reporter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DCE0F220F5E5BA00F2FEDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		32DCE0F420F5E5BA00F2FEDD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +61,8 @@
 		32DCE10E20F5E5BB00F2FEDD /* ReporterUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReporterUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		32DCE11220F5E5BB00F2FEDD /* ReporterUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReporterUITests.swift; sourceTree = "<group>"; };
 		32DCE11420F5E5BB00F2FEDD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		32DCE12020F64A6200F2FEDD /* RecordingSessionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingSessionViewController.swift; sourceTree = "<group>"; };
+		32FAEEAA21021B8E00BB03EB /* previewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = previewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +115,14 @@
 			children = (
 				32DCE0F220F5E5BA00F2FEDD /* AppDelegate.swift */,
 				32DCE0F420F5E5BA00F2FEDD /* ViewController.swift */,
+				322EA22F20FB6A2700BEE797 /* mainScreenViewController.swift */,
+				32DCE12020F64A6200F2FEDD /* RecordingSessionViewController.swift */,
+				32A6EE9B20FB29C100E81494 /* loadingViewController.swift */,
+				320803EF20FCBA5A005152BB /* mapViewController.swift */,
+				320803F120FCCC8B005152BB /* mapMarker.swift */,
+				322EA22D20FB385A00BEE797 /* photosViewController.swift */,
+				32FAEEAA21021B8E00BB03EB /* previewViewController.swift */,
+				320803F320FCEC63005152BB /* global.swift */,
 				32DCE0F620F5E5BA00F2FEDD /* Main.storyboard */,
 				32DCE0F920F5E5BB00F2FEDD /* Assets.xcassets */,
 				32DCE0FB20F5E5BB00F2FEDD /* LaunchScreen.storyboard */,
@@ -256,8 +280,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				322EA22E20FB385A00BEE797 /* photosViewController.swift in Sources */,
+				322EA23020FB6A2700BEE797 /* mainScreenViewController.swift in Sources */,
+				320803F220FCCC8B005152BB /* mapMarker.swift in Sources */,
+				320803F420FCEC63005152BB /* global.swift in Sources */,
 				32DCE0F520F5E5BA00F2FEDD /* ViewController.swift in Sources */,
 				32DCE0F320F5E5BA00F2FEDD /* AppDelegate.swift in Sources */,
+				320803F020FCBA5A005152BB /* mapViewController.swift in Sources */,
+				32DCE12120F64A6200F2FEDD /* RecordingSessionViewController.swift in Sources */,
+				32A6EE9C20FB29C100E81494 /* loadingViewController.swift in Sources */,
+				32FAEEAB21021B8E00BB03EB /* previewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
